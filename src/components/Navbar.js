@@ -33,17 +33,18 @@ const StyledLink = styled(Link)`
     background-color: gray;
   }
 	&.active {
-		background-color: #daaf09;
+		background-color: #3E1B3C;
+    color: white;
 	}
 
   &:last-child {
-    background-color: #BF0B12;
+    background-color: #69F4BD;
     color: black;
 
     &:hover,
     &:active,
     &:focus {
-      background-color: #ad1b21;
+      background-color: #319589;
     }
   }
 `;
