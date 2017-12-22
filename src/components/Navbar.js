@@ -16,6 +16,7 @@ const Nav = styled.div`
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 10px;
   }
 `;
 const StyledLink = styled(Link)`
@@ -27,6 +28,7 @@ const StyledLink = styled(Link)`
   transition: all 0.25s ease-in-out;
   font-family: 'SakerSansBold', sans-serif;
   font-size: 22px;
+  letter-spacing: 1.3px;
 
   &:hover,
   &:active,
