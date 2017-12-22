@@ -29,3 +29,24 @@
     }
   }
 }
+.sensiblefont {
+  font-family: sans-serif;
+}
+.well {
+  padding: 15px;
+  background: lightgray;
+  border-radius: 15px;
+}
+.well--contact {
+  background-color: #69F4BD;
+  text-align: center;
+  font-family: 'SakerSansBold', sans-serif;
+
+  p {
+    font-size: 1.6em;
+  }
+  strong {
+    display: block;
+    margin: 5px 0;
+  }
+}
