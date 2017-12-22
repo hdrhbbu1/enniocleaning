@@ -2,21 +2,22 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from "styled-components"
 import '../global-styles.js'
+import './style.scss'
 
+const SensibleFont = styled.span`
+  font-family: sans-serif;
+`;
 const Nav = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
   font-family: SakerSansBold, sans-serif;
 
   @media (min-width: 768px) {
     flex-direction: row;
+    justify-content: space-between;
   }
 `;
-const NavFooter = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
 const StyledLink = styled(Link)`
   padding: 15px;
   text-align: center;
@@ -65,6 +66,12 @@ class Navbar extends React.Component {
   			<StyledLink activeClassName="active" to={`/contact/`}>
   				Contact
   			</StyledLink>
+        <a className="StyledLink" href="mailto:ennio@integralcleaning.co.uk">
+          Email me
+        </a>
+        <a className="StyledLink" href="tel:07478219348">
+          Call now! <SensibleFont>07478 219348</SensibleFont>
+        </a>
   		</Nav>
     )
   }

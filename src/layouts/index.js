@@ -7,25 +7,18 @@ import '../global-styles.js'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
-
-const Wrapper = styled.section`
+const Wrapper = styled.div`
   font-family: sans-serif;
 `;
-
 const Container = styled.section`
   padding: 2em;
-  max-width: 968px;
+  max-width: 720px;
   margin: 0 auto;
   background-color: white;
 `;
 const Main = styled.main`
   @media (min-width: 768px) {
     flex: 2;
-  }
-`;
-const Aside = styled.aside`
-  @media (min-width: 768px) {
-    flex: 1;
   }
 `;
 
@@ -36,7 +29,9 @@ class Template extends React.Component {
       <Wrapper>
         <Container>
           <Header/>
-            {children()}
+            <Main>
+              {children()}
+            </Main>
 					<Footer/>
         </Container>
       </Wrapper>
