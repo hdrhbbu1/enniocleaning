@@ -6,7 +6,7 @@ import Navbar from '../components/Navbar'
 class Footer extends React.Component {
   render() {
     return (
-      <div>
+      <div className="footer">
         <Link to={'/'} >
           <img src={logo} alt="Ennio's Integral Cleaning" />
         </Link>

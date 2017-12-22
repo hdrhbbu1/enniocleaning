@@ -9,7 +9,7 @@ import Footer from '../components/Footer'
 
 const Wrapper = styled.div`
   font-family: sans-serif;
-  background: url(./bg.jpg) center center fixed;
+  background: url(/bg.jpg) center center fixed;
 `;
 const Container = styled.section`
   padding: 2em;
