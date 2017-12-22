@@ -7,7 +7,7 @@ import './style.scss'
 const SensibleFont = styled.span`
   font-family: sans-serif;
 `;
-const Nav = styled.div`
+const Nav = styled.nav`
   display: flex;
   flex-direction: column;
   justify-content: center;
