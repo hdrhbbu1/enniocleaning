@@ -9,7 +9,7 @@ class BlogPostTemplate extends React.Component {
     const post = this.props.data.markdownRemark
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
     let title
-    if (post.frontmatter.title === 'Home') {
+    if (post.frontmatter.title == 'Home') {
     return (
       <div>
         <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />

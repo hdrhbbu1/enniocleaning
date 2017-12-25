@@ -6,10 +6,17 @@ import '../global-styles.js'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
+import sponge from './sponge.svg'
+
+const SpongeContainer = styled.div`
+  position: absolute;
+  right: 0;
+  top: 0;
+`;
 
 const Wrapper = styled.div`
   font-family: sans-serif;
-  background: url(/bg.jpg) center center fixed;
+  position: relative;
 `;
 const Container = styled.section`
   padding: 2em;
@@ -28,6 +35,9 @@ class Template extends React.Component {
     const { location, children } = this.props
     return (
       <Wrapper>
+        <SpongeContainer>
+         <img src={sponge} alt="a sponge" width="140px"/>
+        </SpongeContainer>
         <Container>
           <Header/>
             <Main>

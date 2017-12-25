@@ -1,7 +1,7 @@
 ---
 title: Home
 date: "2015-05-28T22:40:32.169Z"
-path: "/"
+path: "/home/"
 ---
 
 ## A Better Way to Clean Windows
