@@ -1,18 +1,18 @@
 backend:
   name: github
-  repo: enniocleaning
+  repo: endymion1818/enniocleaning
   branch: master
 
 media_folder: "static/uploads"
 public_folder: "/uploads"
 collections:
 
-  - name: "page"
-    label: "Page"
-    folder: "content"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Body", name: "body", widget: "markdown" }
+- label: "Pages"
+  name: "pages"
+  folder: "/src/pages/*"
+  create: true
+  fields:
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Publish Date", name: "date", widget: "datetime"}
+    - {label: "Featured Image", name: "thumbnail", widget: "image"}
+    - {label: "Body", name: "body", widget: "markdown"}
